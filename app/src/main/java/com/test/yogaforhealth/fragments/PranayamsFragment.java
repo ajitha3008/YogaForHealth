@@ -1,3 +1,4 @@
+
 package com.test.yogaforhealth.fragments;
 
 import android.os.Bundle;
@@ -14,20 +15,20 @@ import androidx.fragment.app.Fragment;
 import com.test.yogaforhealth.CustomizedExpandableListAdapter;
 import com.test.yogaforhealth.R;
 import com.test.yogaforhealth.dataitems.AsanaListDataItems;
-import com.test.yogaforhealth.dataitems.ChakrasListDataItems;
+import com.test.yogaforhealth.dataitems.PranayamsListDataItems;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class ChakrasFragment extends Fragment {
+public class PranayamsFragment extends Fragment {
     View fullView;
     ExpandableListView expandableListViewExample;
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
-    public ChakrasFragment() {
+    public PranayamsFragment() {
         // required empty public constructor.
     }
 
@@ -41,7 +42,7 @@ public class ChakrasFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         fullView = inflater.inflate(R.layout.expandable_list_view, container, false);
         expandableListViewExample = (ExpandableListView) fullView.findViewById(R.id.expandableListViewSample);
-        expandableDetailList = ChakrasListDataItems.getData();
+        expandableDetailList = PranayamsListDataItems.getData();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
         expandableListAdapter = new CustomizedExpandableListAdapter(getActivity(), expandableTitleList, expandableDetailList);
         expandableListViewExample.setAdapter(expandableListAdapter);

@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -52,7 +51,7 @@ public class MudrasFragment extends Fragment {
         expandableListViewExample.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getActivity(), expandableTitleList.get(groupPosition) + " List Expanded.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), expandableTitleList.get(groupPosition) + " List Expanded.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -60,7 +59,7 @@ public class MudrasFragment extends Fragment {
         expandableListViewExample.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getActivity(), expandableTitleList.get(groupPosition) + " List Collapsed.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), expandableTitleList.get(groupPosition) + " List Collapsed.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -71,12 +70,12 @@ public class MudrasFragment extends Fragment {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                Toast.makeText(getActivity(), expandableTitleList.get(groupPosition)
+                /*Toast.makeText(getActivity(), expandableTitleList.get(groupPosition)
                         + " -> "
                         + expandableDetailList.get(
                         expandableTitleList.get(groupPosition)).get(
                         childPosition), Toast.LENGTH_SHORT
-                ).show();
+                ).show();*/
                 return false;
             }
         });

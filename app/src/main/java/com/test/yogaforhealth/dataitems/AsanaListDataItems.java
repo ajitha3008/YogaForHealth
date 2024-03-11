@@ -157,21 +157,6 @@ public class AsanaListDataItems {
         surya_namaskara_asanas.add("Oordhwa Namaskarasana");
         surya_namaskara_asanas.add("Namaskarasana");
 
-        List<String> pranayamas = new ArrayList<String>();
-        pranayamas.add("Anuloma –Viloma");
-        pranayamas.add("Aumkara Pranayama");
-        pranayamas.add("Chandranuloma");
-        pranayamas.add("Suryanuloma");
-        pranayamas.add("Chandrabedhana");
-        pranayamas.add("Suryabedhana");
-        pranayamas.add("Naadishodhana");
-        pranayamas.add("Bhastrika");
-        pranayamas.add("Kapalabhati");
-        pranayamas.add("Sheethali");
-        pranayamas.add("Sheetkari");
-        pranayamas.add("Sadantha");
-        pranayamas.add("Bhramari");
-
         expandableDetailList.put("Breathing methods", breathing_methods);
         expandableDetailList.put("Breathing exercises", breathing_exercises);
         expandableDetailList.put("Body Joint exercises", body_joint_exercises);// 	[Chalane(movement)]	[Bhramana(rotation)]
@@ -182,7 +167,6 @@ public class AsanaListDataItems {
         expandableDetailList.put("Special Asanas", special_asanas);
         expandableDetailList.put("Relaxation Asanas", relaxation_asanas);
         expandableDetailList.put("Surya Namaskara Asanas", surya_namaskara_asanas);
-        expandableDetailList.put("Pranayama techniques", pranayamas);
         return expandableDetailList;
     }
 }

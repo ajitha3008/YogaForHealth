@@ -6,10 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.test.yogaforhealth.fragments.AsanasAndPranayamsFragment;
+import com.test.yogaforhealth.fragments.AsanasFragment;
 import com.test.yogaforhealth.fragments.ChakrasFragment;
 import com.test.yogaforhealth.fragments.MantrasFragment;
 import com.test.yogaforhealth.fragments.MudrasFragment;
+import com.test.yogaforhealth.fragments.PranayamsFragment;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPagerAdapter viewPagerAdapter;
@@ -27,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         // add the fragments
-        viewPagerAdapter.add(new AsanasAndPranayamsFragment(), "Asanas & Pranayams");
-        viewPagerAdapter.add(new ChakrasFragment(), "Chakras");
-        viewPagerAdapter.add(new MantrasFragment(), "Mantras");
-        viewPagerAdapter.add(new MudrasFragment(), "Mudras");
+        viewPagerAdapter.add(new AsanasFragment(), "Asana");
+        viewPagerAdapter.add(new PranayamsFragment(), "Pranayam");
+        viewPagerAdapter.add(new MantrasFragment(), "Mantra");
+        viewPagerAdapter.add(new ChakrasFragment(), "Chakra");
+        viewPagerAdapter.add(new MudrasFragment(), "Mudra");
 
         // Set the adapter
         viewPager.setAdapter(viewPagerAdapter);
